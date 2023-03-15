@@ -218,6 +218,19 @@ body {
 .properties-list {
   width: calc((100%-72px) / 4);
 }
+.properties-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 264px;
+  height: 112px;
+  background-color: var(--grey-cornflower);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.propertie-svg {
+}
 
 .properties-title {
   margin-bottom: 8px;
@@ -281,6 +294,7 @@ body {
 
 .team-ul {
   display: flex;
+  gap: 24px;
 }
 
 .team-names {
@@ -291,9 +305,6 @@ body {
   color: var(--secondary-text-color);
 }
 
-.team-ul {
-  gap: 24px;
-}
 .team-list {
   width: calc((100%-72px) / 4);
 
@@ -318,7 +329,34 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.social-list-item {
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--blue-text-color);
+}
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--push-btn-portfolio);
+}
+
+.social-list-svg {
+  fill: var(--grey-cornflower);
+}
+
 /*----------------- portfolio---------------- */
 
 .portfolio {
@@ -395,6 +433,7 @@ body {
 /*------------- footer -----------------*/
 
 .footer {
+  /* display: flex; */
   padding: 100px 0;
 
   background-color: var(--color-hero-bckg);
@@ -403,6 +442,12 @@ body {
 /* .footer-section {
   padding: 100px 0;
 } */
+.footer-main-block {
+  display: flex;
+}
+.footer-desc {
+  margin-right: 120px;
+}
 
 .footer-text {
   max-width: 264px;
@@ -412,4 +457,11 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-foot-text);
+}
+.footer-social-block {
+  width: 208px;
+  height: 80px;
+}
+.footer-social-media {
+  margin-bottom: 16px;
 }
