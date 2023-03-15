@@ -160,7 +160,7 @@ body {
 }
 
 /*---------------- hero ---------------*/
--- .hero {
+.hero {
   padding: 188px 0;
 
   background-color: var(--color-hero-bckg);
