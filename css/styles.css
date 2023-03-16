@@ -9,6 +9,8 @@
   --color-hero-bckg: #2e2f42;
   --color-foot-text: #e7e9fc;
   --border-bottom: #e7e9fc;
+  --green-color: #31d0aa;
+  --grey-universal: #8e8f99;
 }
 
 h1,
@@ -312,6 +314,8 @@ body {
 
   text-align: center;
   background-color: var(--color-white-fff);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-desc {
@@ -356,7 +360,51 @@ body {
 .social-list-svg {
   fill: var(--grey-cornflower);
 }
+/*------------- Customers------------- */
+.customers {
+}
+.section {
+}
+.coteiner {
+}
+.customers-title {
+  margin-bottom: 72px;
 
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--secondary-text-color);
+}
+.customers-list {
+  display: flex;
+  gap: 24px;
+}
+
+.customers-item {
+}
+.customers-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 168px;
+  height: 88px;
+  border: 1px solid var(--grey-universal);
+  border-radius: 4px;
+}
+.customers-list-link:hover,
+.customers-list-link:focus {
+  border: 1px solid var(--push-btn-portfolio);
+}
+
+.customers-list-link:hover .customers-list-svg,
+.customers-list-link:focus .customers-list-svg {
+  fill: var(--push-btn-portfolio);
+}
+.customers-list-svg {
+  fill: var(--grey-universal);
+}
 /*----------------- portfolio---------------- */
 
 .portfolio {
@@ -406,7 +454,12 @@ body {
 .works-link {
   height: 500px;
 }
-
+/* .works-link:hover,
+.works-link:focus {
+  border: 1px solid #f4f4fd;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+} */
 .works-content {
   padding: 32px 16px;
   border-left: 1px solid var(--border-bottom);
@@ -463,5 +516,39 @@ body {
   height: 80px;
 }
 .footer-social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-white-fff);
+
   margin-bottom: 16px;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.footer-list-item {
+}
+
+.footer-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list-link:hover,
+.footer-list-link:focus {
+  background-color: var(--green-color);
+}
+.footer-list-svg {
+  fill: var(--grey-cornflower);
 }
